@@ -1,0 +1,102 @@
+/*<section class="Section Section-ProdYServ" id="ProdYServ">
+    <div class="DivProductos ProdYServ-Div">
+        <h3 class="-h3"></h3>
+        <div class="-Ejemplos">
+            <div class="-CadaEjemplo"> <h4 class="-TitEj">Saquitos de Mechi</h4> </div>
+            <div class="-CadaEjemplo"> <h4 class="-TitEj">Felicitas Ernst</h4> </div>
+            <div class="-CadaEjemplo"> <h4 class="-TitEj">Agus Ernst Make Up</h4> </div>
+            <div class="-MasEjemplos"> <h4 class="-TitEj">Conocé más sobre nuestros proyectos haciendo acá</h4> </div>
+        </div>       
+    </div>
+
+*/
+.Section-ProdYServ{
+    height: 100vh;
+    width: 100%;
+    .DivProductos{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-flow: row wrap;
+        .-h3{
+            width:100%;
+            height: 10vh;
+        }
+        .-Ejemplos{
+            width: 100%;
+            height:50vh;
+            display: flex;
+            flex-flow: row wrap;
+
+            .LinksA{
+                margin: auto;
+                width: 30vw;
+                display: flex;
+                flex-flow: row wrap;
+                text-decoration: none;
+                opacity: .5;
+                &:hover{
+                    opacity: none;
+                    .-CadaEjemplo{
+                        .-TitEj{
+                            display: none;
+                        }
+                    }
+
+                }
+                
+                
+                .-CadaEjemplo{
+                    
+                    width:100%;
+                    height:40vh;
+                    margin: auto;
+                    display: flex;
+                    flex-flow: row wrap;
+                    
+                    .-TitEj{
+                        margin: auto;
+                        width: fit-content;
+                        text-transform: uppercase;
+                        font-weight: 1300;
+                    }
+                }
+                
+
+            }
+            .SDM{
+                
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                .-CadaEjemplo{
+                    .-TitEj{
+                        display: none;
+                        
+                    }
+                }
+                &:hover{
+                    background-image: url("../Imagenes/SaquitosdeMechi.png");
+                    transition: 1s;
+                }
+            }
+            .LinksB{
+                text-decoration: none;
+                .-MasEjemplos{
+                    display: flex;
+                    flex-flow: row wrap;
+                    width:100vw;
+                    height:10vh;
+                    .-TitEj{
+                        margin: auto;
+                        width: fit-content;
+                        text-transform: uppercase;
+                        font-weight: 1300;
+                        
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
