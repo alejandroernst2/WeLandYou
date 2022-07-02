@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -8,16 +7,17 @@
 
 /*Formato del header para estilo desktop y probablemente tablet*/
 .Header {
+  position: fixed;
   width: 100%;
   height: 13%;
   background-color: #aa3939;
   display: flex;
   flex-flow: row wrap;
-  color: #ececec; }
+  color: #DADCE0; }
   .Header .Header-Tittle {
     width: 24%;
     padding: auto;
-    color: #ececec;
+    color: #DADCE0;
     margin: auto;
     color: inherit;
     /*.Header-Logo{
@@ -52,73 +52,61 @@
             transform: scale(1.1);
             transition: 0.5s; }
 
-/*<section class="Section Section-ProdYServ" id="ProdYServ">
-    <div class="DivProductos ProdYServ-Div">
-        <h3 class="-h3"></h3>
-        <div class="-Ejemplos">
-            <div class="-CadaEjemplo"> <h4 class="-TitEj">Saquitos de Mechi</h4> </div>
-            <div class="-CadaEjemplo"> <h4 class="-TitEj">Felicitas Ernst</h4> </div>
-            <div class="-CadaEjemplo"> <h4 class="-TitEj">Agus Ernst Make Up</h4> </div>
-            <div class="-MasEjemplos"> <h4 class="-TitEj">Conocé más sobre nuestros proyectos haciendo acá</h4> </div>
-        </div>       
-    </div>
-
-*/
-.Section-ProdYServ {
-  height: 100vh;
-  width: 100%; }
-  .Section-ProdYServ .DivProductos {
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    flex-flow: row wrap; }
-    .Section-ProdYServ .DivProductos .-h3 {
+.productosServicios {
+  width: 100%;
+  padding-top: 11%; }
+  .productosServicios .productos {
+    width: 100%; }
+    .productosServicios .productos .productos-titulos {
       width: 100%;
-      height: 10vh; }
-    .Section-ProdYServ .DivProductos .-Ejemplos {
+      font-size: 45px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #4E2C73; }
+    .productosServicios .productos .productos-conteiner {
       width: 100%;
-      height: 50vh;
+      height: 87%;
       display: flex;
       flex-flow: row wrap; }
-      .Section-ProdYServ .DivProductos .-Ejemplos .LinksA {
+      .productosServicios .productos .productos-conteiner .pack {
+        width: 230px;
         margin: auto;
-        width: 30vw;
+        margin-top: 15px;
+        margin-bottom: 15px;
         display: flex;
         flex-flow: row wrap;
-        text-decoration: none;
-        opacity: .5; }
-        .Section-ProdYServ .DivProductos .-Ejemplos .LinksA:hover {
-          opacity: none; }
-          .Section-ProdYServ .DivProductos .-Ejemplos .LinksA:hover .-CadaEjemplo .-TitEj {
-            display: none; }
-        .Section-ProdYServ .DivProductos .-Ejemplos .LinksA .-CadaEjemplo {
+        padding-bottom: 15px;
+        border: 1px solid #DADCE0;
+        border-radius: 8px; }
+        .productosServicios .productos .productos-conteiner .pack .pack-div {
+          padding-top: 5px;
+          padding-bottom: 15px;
           width: 100%;
-          height: 40vh;
           margin: auto;
-          display: flex;
-          flex-flow: row wrap; }
-          .Section-ProdYServ .DivProductos .-Ejemplos .LinksA .-CadaEjemplo .-TitEj {
-            margin: auto;
-            width: fit-content;
-            text-transform: uppercase;
-            font-weight: 1300; }
-      .Section-ProdYServ .DivProductos .-Ejemplos .SDM {
-        background-size: 100% 100%;
-        background-repeat: no-repeat; }
-        .Section-ProdYServ .DivProductos .-Ejemplos .SDM .-CadaEjemplo .-TitEj {
-          display: none; }
-        .Section-ProdYServ .DivProductos .-Ejemplos .SDM:hover {
-          background-image: url("../Imagenes/SaquitosdeMechi.png");
-          transition: 1s; }
-      .Section-ProdYServ .DivProductos .-Ejemplos .LinksB {
-        text-decoration: none; }
-        .Section-ProdYServ .DivProductos .-Ejemplos .LinksB .-MasEjemplos {
-          display: flex;
-          flex-flow: row wrap;
-          width: 100vw;
-          height: 10vh; }
-          .Section-ProdYServ .DivProductos .-Ejemplos .LinksB .-MasEjemplos .-TitEj {
-            margin: auto;
-            width: fit-content;
-            text-transform: uppercase;
-            font-weight: 1300; }
+          height: 10vh;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          border-bottom: 1px solid #DADCE0; }
+          .productosServicios .productos .productos-conteiner .pack .pack-div .pack-tit {
+            text-align: center;
+            color: #4E2C73;
+            font-size: 30px; }
+        .productosServicios .productos .productos-conteiner .pack .pack-ul {
+          list-style-type: none;
+          margin: auto;
+          width: 80%; }
+          .productosServicios .productos .productos-conteiner .pack .pack-ul .pack-li {
+            width: 100%;
+            text-align: left;
+            font-weight: 600;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            color: #4E2C73; }
+          .productosServicios .productos .productos-conteiner .pack .pack-ul .pack-li_precio {
+            text-align: center; }
+        .productosServicios .productos .productos-conteiner .pack:hover .pack-tit {
+          transform: scale(1.3);
+          transition: .5s; }
+        .productosServicios .productos .productos-conteiner .pack:hover .pack-li_precio {
+          transform: scale(1.5);
+          transition: .5s; }

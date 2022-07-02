@@ -1,5 +1,6 @@
 $bordeaux:#aa3939;
-$grey:#ececec;
+$grey:#DADCE0;
+$violet:#4E2C73;
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +8,7 @@ $grey:#ececec;
     font-family: 'Darker Grotesque', sans-serif;
     color:$bordeaux;
 }
+
 
 @import "header.scss";
 @import "ProdYServ.scss";

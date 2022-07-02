@@ -1,102 +1,79 @@
-/*<section class="Section Section-ProdYServ" id="ProdYServ">
-    <div class="DivProductos ProdYServ-Div">
-        <h3 class="-h3"></h3>
-        <div class="-Ejemplos">
-            <div class="-CadaEjemplo"> <h4 class="-TitEj">Saquitos de Mechi</h4> </div>
-            <div class="-CadaEjemplo"> <h4 class="-TitEj">Felicitas Ernst</h4> </div>
-            <div class="-CadaEjemplo"> <h4 class="-TitEj">Agus Ernst Make Up</h4> </div>
-            <div class="-MasEjemplos"> <h4 class="-TitEj">Conocé más sobre nuestros proyectos haciendo acá</h4> </div>
-        </div>       
-    </div>
-
-*/
-.Section-ProdYServ{
-    height: 100vh;
+.productosServicios{
     width: 100%;
-    .DivProductos{
+    padding-top: 11%;
+    .productos{
         width: 100%;
-        height: 60vh;
-        display: flex;
-        flex-flow: row wrap;
-        .-h3{
-            width:100%;
-            height: 10vh;
-        }
-        .-Ejemplos{
+        .productos-titulos{
             width: 100%;
-            height:50vh;
+            font-size: 45px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $violet;
+        }
+        .productos-conteiner{
+            width: 100%;
+            height: 87%;
             display: flex;
             flex-flow: row wrap;
-
-            .LinksA{
+            .pack{
+                width: 230px;
                 margin: auto;
-                width: 30vw;
+                margin-top: 15px;
+                margin-bottom: 15px;
                 display: flex;
                 flex-flow: row wrap;
-                text-decoration: none;
-                opacity: .5;
-                &:hover{
-                    opacity: none;
-                    .-CadaEjemplo{
-                        .-TitEj{
-                            display: none;
-                        }
-                    }
+                padding-bottom: 15px;
+                border: 1px solid $grey;
+                border-radius: 8px;
+                
 
-                }
-                
-                
-                .-CadaEjemplo{
+                .pack-div{
                     
-                    width:100%;
-                    height:40vh;
+                    padding-top:5px;
+                    padding-bottom:15px;
+                    width: 100%;
+                    // background-color: $grey;
                     margin: auto;
-                    display: flex;
-                    flex-flow: row wrap;
-                    
-                    .-TitEj{
-                        margin: auto;
-                        width: fit-content;
-                        text-transform: uppercase;
-                        font-weight: 1300;
-                    }
-                }
-                
+                    height: 10vh;
+                    border-top-left-radius:8px;
+                    border-top-right-radius:8px;
+                    border-bottom: 1px solid $grey;
 
-            }
-            .SDM{
-                
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                .-CadaEjemplo{
-                    .-TitEj{
-                        display: none;
-                        
+                    .pack-tit{
+                        text-align: center;
+                        color: $violet;
+                        font-size: 30px;
+                    }
+
+                }
+                .pack-ul{
+                    list-style-type: none;
+                    margin: auto;
+                    width: 80%;
+                    .pack-li{
+                        width: 100%;
+                        text-align: left;
+                        font-weight: 600;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        color: $violet;
+                    }
+                    .pack-li_precio{
+                        text-align: center;
+
                     }
                 }
                 &:hover{
-                    background-image: url("../Imagenes/SaquitosdeMechi.png");
-                    transition: 1s;
-                }
-            }
-            .LinksB{
-                text-decoration: none;
-                .-MasEjemplos{
-                    display: flex;
-                    flex-flow: row wrap;
-                    width:100vw;
-                    height:10vh;
-                    .-TitEj{
-                        margin: auto;
-                        width: fit-content;
-                        text-transform: uppercase;
-                        font-weight: 1300;
-                        
+                    .pack-tit{
+                        transform: scale(1.3);
+                        transition: .5s;
                     }
+                    .pack-li_precio{
+                            transform: scale(1.5);
+                            transition: .5s;
+                        }
                 }
             }
-
-            
         }
     }
 }
